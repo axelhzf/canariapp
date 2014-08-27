@@ -16,7 +16,7 @@ app.use(router.middleware());
 mountStatic("/assets", __dirname + '/../assets');
 
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
 
 
