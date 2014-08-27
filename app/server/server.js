@@ -1,5 +1,4 @@
 var koa = require("koa");
-var _ = require("underscore");
 var co = require("co");
 var views = require("koa-views");
 var mount = require("koa-mount");
