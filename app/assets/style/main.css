@@ -44,3 +44,7 @@ h1 {
   display: inline-block;
   text-decoration: none;
 }
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
