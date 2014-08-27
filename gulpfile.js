@@ -9,4 +9,8 @@ gulp.task("less", function () {
     .pipe(gulp.dest("app/assets/style"));
 });
 
+gulp.task("watch", ["default"], function () {
+  gulp.watch("app/client/style/*.less", ["less"]);
+});
+
 gulp.task("default", ["less"]);

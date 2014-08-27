@@ -1,3 +1,18 @@
 extends layout
 block content
   h1 CanariApp
+  .content
+    each row in rows
+      .app
+        h2.name
+          if row.url
+            a(href="#{row.url}", target="_blank") #{row.name}
+          else
+            | #{row.name}
+        p.category Category: #{row.category}
+        p.description #{row.description}
+        .links
+          if row.appstore
+            a.btn(href="#{row.appstore}", target="_blank") App Store
+          if row.googleplay
+            a.btn(href="#{row.googleplay}", target="_blank") Google Play
