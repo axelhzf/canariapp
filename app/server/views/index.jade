@@ -13,8 +13,14 @@ block content
         p.description #{row.description}
         .links
           if row.appstore
-            a.btn(href="#{row.appstore}", target="_blank") App Store
+            a.btn(href="#{row.appstore}", target="_blank")
+              i(class="fa fa-apple")
+              |  App Store
           if row.googleplay
-            a.btn(href="#{row.googleplay}", target="_blank") Google Play
+            a.btn(href="#{row.googleplay}", target="_blank")
+              i(class="fa fa-android")
+              |  Google Play
           if row.windowsphone
-            a.btn(href="#{row.windowsphone}", target="_blank") Windows Phone
+            a.btn(href="#{row.windowsphone}", target="_blank")
+              i(class="fa fa-windows")
+              |  Windows Phone
